@@ -1,0 +1,54 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { TrackplayerComponent } from './trackplayer/trackplayer.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
+import { MaincontentComponent } from './maincontent/maincontent.component';
+import { ContentComponent } from './maincontent/content/content.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { BrowseComponent } from './browse/browse.component';
+import { MyplaylistComponent } from './myplaylist/myplaylist.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { PlaylistComponent } from './maincontent/playlist/playlist.component';
+import { SongsComponent } from './maincontent/Songs/songs.component';
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    TrackplayerComponent,
+    SearchbarComponent,
+    MaincontentComponent,
+    PlaylistComponent,
+    ContentComponent,
+    LoginpageComponent,
+    DashboardComponent,
+    HomeComponent,
+    BrowseComponent,
+    MyplaylistComponent,
+    MyprofileComponent,
+    SongsComponent,
+
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTooltipModule,
+    FormsModule // Add FormsModule to the imports array
+
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

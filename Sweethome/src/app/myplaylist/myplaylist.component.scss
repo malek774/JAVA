@@ -1,0 +1,28 @@
+.grid-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-container{
+    z-index: -1;
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 100px;
+    display: inline-flex!important;
+    cursor: pointer;
+
+    img{
+        width: 275px;
+    }
+   
+    .description-container{
+        //position: relative;
+        .header{
+            font-size: 1.2em;
+        }
+        
+    }
+}

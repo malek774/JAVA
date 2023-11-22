@@ -1,0 +1,25 @@
+<div class="trackplayer-container">
+    <div class="left-part">
+        <div class="track-cover">
+            <img style="width: 60px; height:60px" class="img2" [src]="photo" alt="logo">
+        </div>
+        <div class="track-description-container">
+            <div class="title-song">
+                Title Song
+                <span class="like-container">
+                    <img src="../../assets/img/heart.svg" alt="logo">
+                </span>
+            </div>
+            <div class="artist-name">
+                artist name
+            </div>
+        </div>
+
+    </div>
+    <div class="center-part">
+     
+        <audio #audioPlayer controls>
+            <source  id="audioSource" [src]="mp3" type="audio/mpeg" >
+            Your browser does not support the audio element.
+          </audio>
+</div>

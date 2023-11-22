@@ -1,0 +1,18 @@
+<div class="navbar-container">
+    <div class="left-part">
+        <div class="logo">
+            <img src="../../assets/img/audio.svg" alt="logo">
+        </div>
+        <div class="app-name">Sweet Home </div>
+    </div>
+    <div class="center-part">
+        <ul>
+            <li [routerLink]="['/dashboard/home']">Home</li>
+            <li [routerLink]="['/dashboard/browse']">Browse</li>
+            <li [routerLink]="['/dashboard/myplaylist']">My Playlist</li>
+        </ul>
+    </div>
+    <div class="right-part" [routerLink]="['/']">
+        logout
+    </div>
+</div>
